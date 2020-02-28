@@ -14,13 +14,11 @@ int Dane()
     return c;
 }
 
-int oblicz(int x)
+int oblicz(int x, int y)
 {
-    int y;
     for(int i=1; i<x; i++)
     {
         z=Dane();
-        if(i==1) a=Dane();
         if(z<y)
         {
             y=z;
@@ -30,11 +28,16 @@ int oblicz(int x)
 }
 
 //PROGRAM
+
+
 int mainn()
 {
     n = Dane();
-    cout << "Najmniejsza to: " << oblicz(n);
+    a = Dane();
+
+    cout << "Najmniesza to: " << oblicz(n,a);
 }
+
 // KONIEC PROGRAMU
 
 
